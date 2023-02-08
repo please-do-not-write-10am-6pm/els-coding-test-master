@@ -29,6 +29,8 @@ section#home {
       .card {
         flex: 0 0 33.33%;
         padding: 16px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
         @media (max-width: 960px) {
           flex: 0 0 50%;
@@ -48,7 +50,7 @@ section#home {
           }
           .description {
             font-size: 18px;
-            color: #777;
+            color: #fff;
           }
         }
         .card-footer {
