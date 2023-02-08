@@ -13,7 +13,7 @@
  * Firstly we need to import the React JS Library
  */
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
 import { Provider } from 'react-redux'
 import 'regenerator-runtime/runtime'
 
@@ -26,7 +26,9 @@ import ErrorBoundary from './components/ErrorBoundary'
  * We can start our initial App here in the main.js file
  */
 
-const App = () => (
+const root = createRoot(document.getElementById('root'))
+
+root.render(
   <ErrorBoundary>
     <Provider store={store}>
       <div className='App'>
@@ -36,6 +38,3 @@ const App = () => (
     </Provider>
   </ErrorBoundary>
 )
-
-// Render this out
-ReactDOM.render(<App />, document.getElementById('root'))

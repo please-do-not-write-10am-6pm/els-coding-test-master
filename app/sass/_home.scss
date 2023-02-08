@@ -12,12 +12,12 @@ section#home {
   background-image: url('/img/header.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: auto;
 
   div.content {
     max-width: $siteWidth;
     margin: 0 auto;
     color: #fff;
-
     h1 {
       text-align: center;
     }

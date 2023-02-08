@@ -25,7 +25,7 @@ const Product = ({ product }) => {
   )
 }
 
-Product.PropTypes = {
+Product.propTypes = {
   product: PropTypes.shape({
     picture: PropTypes.string,
     name: PropTypes.string,
